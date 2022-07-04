@@ -1,0 +1,100 @@
+
+@media screen and (min-width:800px){
+    body{
+        background:linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%) ) ;
+        background-repeat: no-repeat;
+        background-size: 100% 180%;
+        user-select: none;
+        .container::before{
+            content:" ";
+            width: 25em;
+            height: 18em;
+            background-image: url(images/illustration-woman-online-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: 25em 18em;
+            position: absolute;
+            user-select: none;
+            left: -2em;
+            z-index: 100;
+        }
+        .container::after{
+            content:" ";
+            width: 50em;
+            height: 50em;
+            background-image: url(images/bg-pattern-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: 50em;
+            position: absolute;
+            filter: drop-shadow(-20px 85px 1px hsl(240, 5%, 91%));
+            user-select: none;
+            left: -30em;
+            z-index: 0;
+            top:-15em;
+        }
+        .container{
+            background-color: #fff;
+            margin: 7em auto;
+            width: 50em;
+            overflow: hidden;
+            height: fit-content;
+            padding: 4em;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 20px 40px hsl(237, 12%, 33%);
+            h1{
+                margin-left: 10.5em;
+            }
+            .container-text{
+                margin-top: 1em;
+                font-weight: 400;
+                position: relative;
+                width: 20em;
+                margin-left: 21em;
+               .container__FAQ{
+                padding: 10px 0;
+                height: fit-content;
+                position: relative;
+                border-bottom: 1px solid hsl(240, 5%, 91%);
+                user-select: none;
+                z-index: 29;
+                h2{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: hsl(237, 12%, 33%);  
+                    cursor: pointer; 
+                }
+                h2:hover{
+                    color:hsl(14, 88%, 65%);
+                }
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    user-select: none;
+                    transition: transform .3s ease-in-out;
+                    cursor: pointer;
+                }
+                .up{
+                    transform: rotate(180deg);
+                }
+                .negrita{
+                    font-weight: 700;
+                    color: #000;
+                }
+                P{
+                    display: none;
+                }
+                .p-active{
+                    display: inline-block;
+                    font-size:11px;
+                    color:hsl(240, 6%, 50%);
+                    padding:5px 15px 5px 0;
+                }
+               }
+            }
+        }
+    }
+}

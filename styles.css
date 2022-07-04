@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway&display=swap");
+@media screen and (min-width: 800px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+    background: linear-gradient(to bottom, #af67e9, #6565e7);
+    background-repeat: no-repeat;
+    background-size: 100% 180%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .container::before {
+    content: " ";
+    width: 25em;
+    height: 18em;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 25em 18em;
+    position: absolute;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    left: -2em;
+    z-index: 100;
+  }
+  body .container::after {
+    content: " ";
+    width: 50em;
+    height: 50em;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 50em;
+    position: absolute;
+    -webkit-filter: drop-shadow(-20px 85px 1px #e7e7e9);
+            filter: drop-shadow(-20px 85px 1px #e7e7e9);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    left: -30em;
+    z-index: 0;
+    top: -15em;
+  }
+  body .container {
+    background-color: #fff;
+    margin: 7em auto;
+    width: 50em;
+    overflow: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 4em;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    -webkit-box-shadow: 0 20px 40px #4a4b5e;
+            box-shadow: 0 20px 40px #4a4b5e;
+  }
+  body .container h1 {
+    margin-left: 10.5em;
+  }
+  body .container .container-text {
+    margin-top: 1em;
+    font-weight: 400;
+    position: relative;
+    width: 20em;
+    margin-left: 21em;
+  }
+  body .container .container-text .container__FAQ {
+    padding: 10px 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    border-bottom: 1px solid #e7e7e9;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: 29;
+  }
+  body .container .container-text .container__FAQ h2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4a4b5e;
+    cursor: pointer;
+  }
+  body .container .container-text .container__FAQ h2:hover {
+    color: #f47c57;
+  }
+  body .container .container-text .container__FAQ img {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    cursor: pointer;
+  }
+  body .container .container-text .container__FAQ .up {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  body .container .container-text .container__FAQ .negrita {
+    font-weight: 700;
+    color: #000;
+  }
+  body .container .container-text .container__FAQ P {
+    display: none;
+  }
+  body .container .container-text .container__FAQ .p-active {
+    display: inline-block;
+    font-size: 11px;
+    color: #787887;
+    padding: 5px 15px 5px 0;
+  }
+}
+
+*, *::after, *::before {
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (min-width: 300px) and (max-width: 799px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+    background: linear-gradient(to bottom, #af67e9, #6565e7);
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .container::before {
+    content: " ";
+    width: 15em;
+    height: 12em;
+    background-image: url(images/illustration-woman-online-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 15em 12em;
+    margin: auto;
+    margin-top: -8.7em;
+    -webkit-filter: drop-shadow(5px 30px 1px #e7e7e9);
+            filter: drop-shadow(5px 30px 1px #e7e7e9);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .container {
+    background-color: #fff;
+    margin: 9em auto;
+    border-radius: 15px;
+    width: 88%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: small;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    -webkit-box-shadow: 0 4px 10px #4a4b5e;
+            box-shadow: 0 4px 10px #4a4b5e;
+  }
+  body .container h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 2em;
+  }
+  body .container .container-text {
+    margin-top: 1em;
+    font-size: smaller;
+    font-weight: 400;
+    position: relative;
+  }
+  body .container .container-text .container__FAQ {
+    padding: 10px 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: relative;
+    border-bottom: 1px solid #e7e7e9;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+  }
+  body .container .container-text .container__FAQ h2 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #4a4b5e;
+  }
+  body .container .container-text .container__FAQ img {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  body .container .container-text .container__FAQ .up {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  body .container .container-text .container__FAQ .negrita {
+    font-weight: 700;
+    color: #000;
+  }
+  body .container .container-text .container__FAQ P {
+    display: none;
+  }
+  body .container .container-text .container__FAQ .p-active {
+    display: inline-block;
+    font-size: 10.5px;
+    color: #787887;
+    padding: 5px 15px 5px 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

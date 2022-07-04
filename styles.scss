@@ -1,0 +1,92 @@
+@import "desktop-styles";
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway&display=swap');
+
+
+*,*::after,*::before{
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:300px) and (max-width:799px) {
+    body{
+        background:linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%) ) ;
+        background-repeat: no-repeat;
+        position: relative;
+        user-select: none;
+        .container::before{
+            content:" ";
+            width: 15em;
+            height: 12em;
+            background-image: url(images/illustration-woman-online-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: 15em 12em;
+            margin: auto;
+            margin-top: -8.7em;
+            filter: drop-shadow(5px 30px 1px hsl(240, 5%, 91%));
+            user-select: none;
+        }
+        .container{
+            background-color: #fff;
+            margin: 9em auto;
+            border-radius: 15px;
+            width: 88%;
+            height: fit-content;
+            font-size: small;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 4px 10px hsl(237, 12%, 33%);
+            h1{
+                align-self: center;
+                margin-top: 2em;
+            }
+            .container-text{
+                margin-top: 1em;
+                font-size: smaller;
+                font-weight: 400;
+                position: relative;
+               .container__FAQ{
+                padding: 10px 0;
+                height: fit-content;
+                position: relative;
+                border-bottom: 1px solid hsl(240, 5%, 91%);
+                user-select: none;
+                cursor: pointer;
+                h2{
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: hsl(237, 12%, 33%);   
+                }
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 15px;
+                    user-select: none;
+                }
+                .up{
+                    transform: rotate(180deg);
+                }
+                .negrita{
+                    font-weight: 700;
+                    color: #000;
+                }
+                P{
+                    display: none;
+                }
+                .p-active{
+                    display: inline-block;
+                    font-size:10.5px;
+                    color:hsl(240, 6%, 50%);
+                    padding:5px 15px 5px 0;
+                }
+               }
+            }
+        }
+    }
+    
+}
